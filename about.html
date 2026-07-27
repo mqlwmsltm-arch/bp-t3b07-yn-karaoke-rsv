@@ -1,174 +1,73 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="연남동 감성 가라오케 브로들의 힐링타임, 상세 정보와 예약 방법을 확인하세요. 연남 가라오케의 모든 것을 알려드립니다.">
-    <meta name="keywords" content="연남 가라오케, 연남동 가라오케, 가라오케 정보, 연남 가라오케 예약, 노래방, 홍대 가라오케, 브로 가라오케, 힐링, 감성">
-    <meta name="author" content="연남 가라오케">
-    <meta name="robots" content="index, follow">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <link rel="canonical" href="https://yeonnam-song-room.mapo-room-guide.xyz/about.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="연남 가라오케 정보 | 브로들의 힐링타임">
-    <meta property="og:description" content="연남동 감성 가라오케 브로들의 힐링타임, 상세 정보와 예약 방법을 확인하세요.">
-    <meta property="og:image" content="https://t3b07-yn-karaoke-rsv.vercel.app/og-image.jpg">
-    <meta property="og:url" content="https://yeonnam-song-room.mapo-room-guide.xyz/about.html">
-    <meta property="og:site_name" content="연남 가라오케">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="연남 가라오케 정보 | 브로들의 힐링타임">
-    <meta name="twitter:description" content="연남동 감성 가라오케 브로들의 힐링타임, 상세 정보와 예약 방법을 확인하세요.">
-    <meta name="twitter:image" content="https://t3b07-yn-karaoke-rsv.vercel.app/og-image.jpg">
-    <title>연남 가라오케 정보 | 브로들의 힐링타임</title>
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; font-size: 16px; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #1a1a1a; background-color: #faf9f7; }
-        h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.2; color: #1a1a1a; }
-        h1 { font-size: 2.5rem; letter-spacing: -0.02em; margin-bottom: 1rem; }
-        h2 { font-size: 2rem; letter-spacing: -0.01em; margin-bottom: 0.75rem; }
-        h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-        p { margin-bottom: 1rem; color: #4a4a4a; }
-        a { color: #b8860b; text-decoration: none; transition: color 0.3s ease; }
-        a:hover { color: #8b6914; }
-        .dropcap::first-letter { font-size: 3.5rem; font-weight: 700; float: left; line-height: 1; margin-right: 0.5rem; color: #b8860b; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-        header { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); color: #faf9f7; padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 20px rgba(0,0,0,0.1); }
-        header .container { display: flex; justify-content: space-between; align-items: center; }
-        header h1 { font-size: 1.5rem; margin-bottom: 0; color: #faf9f7; }
-        header h1 a { color: #faf9f7; }
-        header h1 a:hover { color: #d4af37; }
-        nav { display: flex; gap: 2rem; align-items: center; }
-        nav a { color: #ccc; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.5rem 0; border-bottom: 2px solid transparent; transition: all 0.3s ease; }
-        nav a:hover { color: #d4af37; border-bottom-color: #d4af37; }
-        .hamburger-menu { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; padding: 10px; }
-        .hamburger-menu span { display: block; width: 25px; height: 2px; background-color: #faf9f7; transition: all 0.3s ease; }
-        .hero-section { background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%); color: #faf9f7; padding: 4rem 0; text-align: center; margin-bottom: 3rem; }
-        .hero-section h1 { color: #faf9f7; font-size: 3rem; margin-bottom: 1.5rem; }
-        .hero-section p { color: #ccc; font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
-        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0; }
-        .info-card { background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #e8e4df; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .info-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
-        .info-card h3 { color: #b8860b; margin-bottom: 1rem; }
-        .info-card p { color: #666; font-size: 0.95rem; }
-        .info-card .icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
-        .faq-section { background: #fff; border-radius: 12px; padding: 3rem; margin: 3rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #e8e4df; }
-        .faq-item { border-bottom: 1px solid #e8e4df; padding: 1.5rem 0; }
-        .faq-item:last-child { border-bottom: none; }
-        .faq-item h4 { color: #1a1a1a; font-size: 1.1rem; margin-bottom: 0.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        .faq-item h4::after { content: '+'; font-size: 1.5rem; color: #b8860b; }
-        .faq-item.active h4::after { content: '−'; }
-        .faq-item p { color: #666; font-size: 0.95rem; margin-top: 0.5rem; display: none; }
-        .faq-item.active p { display: block; }
-        .cta-section { background: linear-gradient(135deg, #b8860b 0%, #d4af37 100%); color: #fff; text-align: center; padding: 4rem 2rem; border-radius: 12px; margin: 3rem 0; }
-        .cta-section h2 { color: #fff; font-size: 2.5rem; margin-bottom: 1rem; }
-        .cta-section p { color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 2rem; }
-        .tel-link { display: inline-block; background: #1a1a1a; color: #faf9f7; padding: 1rem 2.5rem; border-radius: 50px; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.05em; transition: all 0.3s ease; text-decoration: none; }
-        .tel-link:hover { background: #2d2d2d; color: #d4af37; transform: scale(1.05); }
-        footer { background: #1a1a1a; color: #faf9f7; text-align: center; padding: 2rem 0; margin-top: 4rem; }
-        footer p { color: #999; font-size: 0.9rem; }
-        @media (max-width: 768px) {
-            .container { padding: 0 1rem; }
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.5rem; }
-            .hero-section h1 { font-size: 2rem; }
-            .hero-section p { font-size: 1rem; }
-            .info-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-            .faq-section { padding: 2rem 1rem; }
-            .cta-section h2 { font-size: 1.8rem; }
-            .tel-link { font-size: 1.1rem; padding: 0.8rem 1.5rem; }
-            nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #1a1a1a; padding: 1rem; gap: 1rem; }
-            nav.active { display: flex; }
-            nav a { border-bottom: none; padding: 0.5rem; text-align: center; }
-            .hamburger-menu { display: flex; }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>연남 가라오케 예약 — 정보</title>
+  <meta name="description" content="연남에서 가라오케를 예약하려는 초보자를 위해 이용 전 확인사항, 예약 절차, 연장·조기 종료 처리 등 실용적인 정보를 상세히 안내합니다.">
+  <meta name="keywords" content="연남 가라오케, 가라오케 예약, 연남 노래방, 연남 노래방 이용법, 가라오케 이용 팁">
+  <link rel="canonical" href="https://yeonnam-song-room.mapo-room-guide.xyz/about.html">
+  <meta property="og:title" content="연남 가라오케 예약 — 정보">
+  <meta property="og:description" content="연남에서 가라오케를 예약하려는 초보자를 위해 이용 전 확인사항, 예약 절차, 연장·조기 종료 처리 등 실용적인 정보를 상세히 안내합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yeonnam-song-room.mapo-room-guide.xyz/about.html">
+  <meta property="og:image" content="https://yeonnam-song-room.mapo-room-guide.xyz/og-image.jpg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="/">브로들의 힐링타임</a></h1>
-            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('nav').classList.toggle('active')">
-                <span></span><span></span><span></span>
-            </button>
-            <nav>
-                <a href="/">홈</a>
-                <a href="/info">정보</a>
-                <a href="/reservation">예약</a>
-                <a href="/review">리뷰</a>
-                <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="logo"><a href="/">연남 가라오케 가이드</a></div>
+    <nav>
+      <ul>
+        <li><a href="/home">홈</a></li>
+        <li><a href="/reservation">예약 방법</a></li>
+        <li><a href="/info">정보</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero-section">
-        <div class="container">
-            <h1>연남 가라오케, 제대로 즐기는 법</h1>
-            <p>연남동 골목길에 자리한 작은 힐링 공간, 브로들의 힐링타임. 여긴 그냥 노래방이 아니야. 친구랑 와도, 혼자 와도 딱 좋은 감성 가라오케. 우리만의 꿀팁과 정보를 다 알려줄게.</p>
-        </div>
-    </section>
+  <section class="hero">
+    <h1>연남 가라오케 이용 전 꼭 알아야 할 정보</h1>
+    <p>연남의 가라오케는 분위기와 시설이 다양해 첫 방문자에게도 친숙합니다. 하지만 예약 전 확인해야 할 사항이 몇 가지 있습니다. 이 페이지에서는 지역 특성에 맞춘 실용적인 정보를 제공해, 여러분이 원하는 시간에 무리 없이 즐길 수 있도록 도와드립니다.</p>
+  </section>
 
-    <main class="container">
-        <section class="info-grid">
-            <div class="info-card">
-                <span class="icon">📍</span>
-                <h3>위치 & 접근성</h3>
-                <p>연남동 중심가, 홍대입구역 3번 출구에서 도보 7분. 골목길에 숨겨져 있어서 처음엔 찾기 힘들지도 몰라. 근데 그게 매력이야. 주변에 맛집도 많고, 카페도 많아서 힐링 코스로 딱이야. 네비 찍고 오면 금방 찾을 수 있어.</p>
-            </div>
-            <div class="info-card">
-                <span class="icon">🎤</span>
-                <h3>시설 & 시스템</h3>
-                <p>최신 음향 시스템에 조명까지 완벽. 방음도 완벽해서 맘껏 질러도 돼. 노래방 기계는 TJ미디어 최신 모델, 곡도 엄청 많아. 90년대 감성부터 최신곡까지 다 있음. 마이크는 슈어 SM58, 진짜 프로급이야.</p>
-            </div>
-            <div class="info-card">
-                <span class="icon">💰</span>
-                <h3>요금 & 시간</h3>
-                <p>시간당 2만원부터 시작, 주말엔 조금 더 비싸. 근데 퀄리티 생각하면 완전 합리적인 가격이야. 2시간 이상 이용하면 음료 서비스도 있고, 자정 이후엔 할인도 있어. 단체로 오면 더 착한 가격으로 이용 가능.</p>
-            </div>
-            <div class="info-card">
-                <span class="icon">🍺</span>
-                <h3>부가 서비스</h3>
-                <p>음료랑 간단한 안주도 준비되어 있어. 맥주, 소주, 양주 다 있고, 안주는 과일 플레터나 치킨이 인기야. 특별히 원하는 게 있으면 미리 얘기해줘, 준비해둘게. 생일 파티나 기념일엔 깜짝 이벤트도 가능!</p>
-            </div>
-        </section>
+  <section>
+    <h2>① 이용 전 확인사항</h2>
+    <p>연남 지역 가라오케는 대부분 온라인 사전 예약 시스템을 운영합니다. 사전 예약 시 요구되는 최소 인원수와 운영 시간대를 확인하고, 원하는 날짜와 시간대를 미리 체크해 두는 것이 좋습니다. 또한, 각 가라오케마다 음량 제한과 마이크 사용 규칙이 다를 수 있으니, 사전에 홈페이지나 전화로 문의해 정확한 운영 정책을 파악하세요.</p>
+    <p>음식·음료 반입 여부도 중요한 포인트입니다. 대부분의 장소는 별도 바에서 제공하는 음료만 허용하고, 외부 음식은 반입이 금지됩니다. 만약 직접 준비한 간식을 가져가고 싶다면, 사전 협의가 필요하니 예약 단계에서 담당자와 상의하는 것이 안전합니다.</p>
+  </section>
 
-        <section class="faq-section">
-            <h2>자주 묻는 질문</h2>
-            <div class="faq-item active">
-                <h4>예약은 어떻게 하나요?</h4>
-                <p>전화 예약이 제일 확실해. 010-6279-0862로 전화 주시면 원하는 시간대 확인해드려요. 카톡이나 문자도 가능하지만, 전화가 가장 빠릅니다. 평일은 오후 6시부터, 주말은 오후 2시부터 예약 가능해요.</p>
-            </div>
-            <div class="faq-item">
-                <h4>몇 명까지 이용 가능한가요?</h4>
-                <p>기본 룸은 2~4인용, 단체 룸은 최대 10명까지 가능해요. 단체로 오실 땐 미리 얘기해주시면 룸 준비해드립니다. 생일 파티나 회식 장소로도 인기 많아요!</p>
-            </div>
-            <div class="faq-item">
-                <h4>주차 가능한가요?</h4>
-                <p>건물 전용 주차장은 없지만, 근처 공영 주차장이 있어요. 연남동 공영주차장에서 도보 3분 거리, 주차비도 저렴합니다. 대중교통 이용을 추천드려요, 역에서 가깝고 골목길 데이트도 즐기기 좋아요.</p>
-            </div>
-            <div class="faq-item">
-                <h4>노래방에 없는 곡도 신청 가능한가요?</h4>
-                <p>물론이죠! TJ미디어 최신 기기라 웬만한 곡은 다 있어요. 혹시 없더라도 저희한테 말씀해주시면 다음 업데이트 때 반영해드려요. 고객님들의 리퀘스트를 적극 반영하고 있습니다.</p>
-            </div>
-        </section>
+  <section>
+    <h2>② 예약 절차와 팁</h2>
+    <p>예약은 크게 두 가지 경로로 진행됩니다. 첫 번째는 공식 웹사이트나 모바일 앱을 통한 자동 예약이며, 두 번째는 전화나 현장 방문을 통한 수동 예약입니다. 자동 예약은 실시간 남은 좌석을 확인할 수 있어 편리하지만, 고정된 시간대 외에 유연하게 변경하기는 어렵습니다. 반면, 전화 예약은 담당자와 직접 대화하면서 특별 요청(예: 마이크 추가, 조명 옵션 등)을 넣을 수 있어 맞춤형 서비스 이용에 유리합니다.</p>
+    <p>예약 시 유의할 점은 결제 방식과 취소 정책입니다. 대부분의 가라오케는 사전 결제를 요구하지만, 일부는 현장 결제도 가능합니다. 또한, 예약 날짜 전날까지는 무료 취소가 가능한 경우가 많으며, 그 이후에는 일정 비율의 위약금이 부과될 수 있습니다. 따라서 일정이 확정되기 전까지는 유연한 취소 정책을 제공하는 업체를 선택하는 것이 좋습니다.</p>
+  </section>
 
-        <section class="cta-section">
-            <h2>지금 바로 예약하세요</h2>
-            <p>연남동에서 가장 감성적인 가라오케, 브로들의 힐링타임. 친구랑, 연인이랑, 아니면 혼자서도 괜찮아. 전화 한 통이면 끝!</p>
-            <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
-        </section>
-    </main>
+  <section>
+    <h2>③ 인원·시간·목적에 따른 선택 가이드</h2>
+    <p>소규모(2~4인) 모임이라면 개인실이 있는 소형 방을, 대규모(10인 이상) 파티라면 대형 방이나 파티룸을 선택하는 것이 효율적입니다. 개인실은 프라이버시가 보장되어 조용히 노래를 즐길 수 있지만, 방마다 최소 이용 시간이 정해져 있는 경우가 많습니다. 반면, 대형 방은 인원 제한이 없고 자유롭게 이동할 수 있어 파티 분위기를 만들기에 적합합니다.</p>
+    <p>시간대별 요금 차이도 고려해 보세요. 일반적으로 주중 낮 시간대는 저렴하고, 주말 저녁이나 공휴일은 프리미엄 요금이 적용됩니다. 또한, 특정 목적(예: 생일 파티, 기업 워크숍)에 맞춰 프로모션을 제공하는 경우가 있으니, 해당 목적에 맞는 특별 패키지를 찾아보는 것이 비용 절감에 도움이 됩니다.</p>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 브로들의 힐링타임 | 연남동 가라오케 | 010-6279-0862</p>
-            <p>서울 마포구 연남동 123-45 | 사업자등록번호: 123-45-67890</p>
-        </div>
-    </footer>
+  <section>
+    <h2>④ 추가 서비스와 비용</h2>
+    <p>가라오케에서는 기본 노래방 이용 외에도 다양한 부가 서비스를 제공합니다. 예를 들어, 음향 효과 강화, 조명 색상 변경, 사진·영상 촬영 옵션 등이 있습니다. 이러한 옵션은 이용 시간당 추가 요금이 붙는 경우가 많으며, 사전 예약 시 옵션 선택 여부를 확인하고 비용을 미리 계산해 두는 것이 좋습니다.</p>
+    <p>또한, 다과·주류 패키지도 별도 결제로 제공됩니다. 주류는 연령 제한이 적용되므로, 19세 미만 고객이 포함된 경우에는 무알코올 음료 패키지를 선택하도록 안내합니다. 다과는 사전에 주문하면 방 안에서 바로 제공되므로, 파티 진행 중에 따로 주문할 필요가 없어 편리합니다.</p>
+  </section>
 
-    <script>
-        document.querySelectorAll('.fa
+  <section>
+    <h2>⑤ 자주 묻는 질문(FAQ)</h2>
+    <h3>Q1. 예약 후 인원 변동이 가능할까요?</h3>
+    <p>A. 대부분의 가라오케는 인원 변동을 사전에 알려주면 조정이 가능합니다. 다만, 방 크기에 제한이 있으니 최소·최대 인원 기준을 초과하지 않도록 주의하세요.</p>
+    <h3>Q2. 노래 선택은 어떻게 하나요?</h3>
+    <p>A. 방 안에 설치된 터치 패널이나 모바일 앱을 통해 언제든지 곡을 검색·선택할 수 있습니다. 최신 곡 업데이트는 보통 주 1회 이루어지니, 최신 히트곡을 놓치지 않으려면 최신 버전으로 운영되는 방을 선택하는 것이 좋습니다.</p>
+    <h3>Q3. 연장과 조기 종료는 어떻게 처리하나요?</h3>
+    <p>A. 연장은 남은 시간에 따라 추가 요금이 부과되며, 현장 또는 앱을 통해 바로 신청할 수 있습니다. 조기 종료 시에는 남은 시간에 대한 환불이 없으니, 정확한 이용 시간을 미리 계획하는 것이 중요합니다.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 연남 가라오케 가이드. 모든 권리 보유.</p>
+  </footer>
 </body>
 </html>
