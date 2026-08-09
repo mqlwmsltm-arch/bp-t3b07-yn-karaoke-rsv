@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>글룸헤이븐 1/2 판 클래스 카드 수정, 연남 가라오케 예약보다 더 민감한 변수들</title>
-  <link rel="canonical" href="https://yeonnam-song-room.mapo-room-guide.xyz/posts/t3link-001-1d2yatq.html">
-  <style>
-    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
-    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
-    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
-    p { margin: 0 0 1em; }
-    a { color: #3182ce; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
-  <meta property="og:url" content="https://yeonnam-song-room.mapo-room-guide.xyz/posts/t3link-001-1d2yatq.html">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>글룸헤이븐 1/2 판 클래스 카드 수정, 연남 가라오케 예약보다 더 민감한 변수들</title>
+ <link rel="canonical" href="https://yeonnam-song-room.mapo-room-guide.xyz/posts/t3link-001-1d2yatq.html">
+ <style>
+ body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+ h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+ h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+ h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+ p { margin: 0 0 1em; }
+ a { color: #3182ce; text-decoration: none; }
+ a:hover { text-decoration: underline; }
+ </style>
+ <meta property="og:url" content="https://yeonnam-song-room.mapo-room-guide.xyz/posts/t3link-001-1d2yatq.html">
+ <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <meta property="og:title" content="글룸헤이븐 1/2 판 클래스 카드 수정, 연남 가라오케 예약보다 더 민감한 변수들">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-  <header>
-    <a href="../index.html">← 목록으로 돌아가기</a>
-  </header>
-  <main>
-    <h1>글룸헤이븐 1/2 판 클래스 카드 수정, 연남 가라오케 예약보다 더 민감한 변수들</h1>
-    <article>
-      <p><img src="../assets/bpaas_00083_.webp" alt="글룸헤이븐 보드게임 클래스 카드 비교 분석" loading="lazy" width="1344" height="768"></p>
+ <header>
+ <a href="./index.html">← 목록으로 돌아가기</a>
+ </header>
+ <main>
+ <h1>글룸헤이븐 1/2 판 클래스 카드 수정, 연남 가라오케 예약보다 더 민감한 변수들</h1>
+ <article>
+ <p><img src="./assets/연남 가라오케 안내_00083_.webp" alt="글룸헤이븐 보드게임 클래스 카드 비교 분석" loading="lazy" width="1344" height="768"></p>
 <p>아직도 2판 수정안에서 헷갈리는 부분이 있더라. 특히 공식 FAQ에도 없는 코너 케이스 세 가지를 분석해봤는데, 이 부분은 단순 스탯 변경을 넘어서서 룰 적용 방식 자체에 차이가 있다. 예를 들어 특정 클래스의 회복력 계산 시 1판과 2판 간 수치 범위가 달라져 결과값이 크게 갈리기도 했다.</p>
 <h2>세부 변경 사항 관찰</h2>
 <p>1판과 2판 클래스 카드 7종의 스탯 차이는 숫자만 바뀐 게 아니다. 버전명이나 모델명을 확인하지 않고는 정확한 비교가 불가능한 경우도 꽤 있다. 예를 들어 2023 년에 배포된 리버서드 패킷에서 변경된 수치만 따져도 기존 세트와 호환성에 문제가 생길 수 있다.</p>
@@ -37,15 +37,15 @@
 <p>구체적인 계산 예시를 들어보자면, 데미지 수치는 2 판에서 최대 30% 감소할 수 있다. 이는 공격력의 상한선을 조정하거나 방어를 강화함으로써 발생하는 파급 효과를 의미한다. 따라서 직접 실험하지 않고도 일반적인 원리로 예상 가능한 범위 내에 있다.</p>
 <p>처음 장면을 다시 해석하면, 내가 놓친 건 단순히 숫자가 아니라 적용 규칙의 논리적 연쇄였다. 7 종의 클래스 카드 변경은 게임 메커니즘을 더 유연하게 만들었다. 효율성을 추구하는 관점에서는 이 변화가 필수적인 업그레이드다.</p>
 
-    <div class="juice-ref-fqdk35" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
-      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
-      <ul style="list-style:none;padding:0;margin:0;">
-      <li>심층 정보와 실제 데이터는 <a href="https://aga-clinic.space/">tokyo-aga</a>를 참고하세요.</li>
-      <li>관련 업계 트렌드와 통계는 <a href="https://hikari-fiber.store/">tokyo-fiber</a>에 정리되어 있습니다.</li>
-      <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
-      </ul>
-    </div>
-    </article>
-  </main>
+ <div class="juice-ref-fqdk35" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+ <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+ <ul style="list-style:none;padding:0;margin:0;">
+ <li>심층 정보와 실제 데이터는 <a href="https://aga-clinic.space/">tokyo-aga</a>를 참고하세요.</li>
+ <li>관련 업계 트렌드와 통계는 <a href="https://hikari-fiber.store/">tokyo-fiber</a>에 정리되어 있습니다.</li>
+ <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+ </ul>
+ </div>
+ </article>
+ </main>
 </body>
 </html>
